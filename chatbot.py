@@ -1,4 +1,3 @@
-
 import time
 import random
 
@@ -82,7 +81,7 @@ KNOWLEDGE_BASE = {
 
 RESPONSES = {
 
-    "greet": lambda: f"""
+    "greet": lambda: """
 Hey there! Welcome to SkillPath Bot
 Your FREE Career & Course Guide
 
@@ -93,8 +92,7 @@ Type 'menu' to see what I can guide you on!
 """,
 
     "about": lambda: """
-I am SkillPath Bot - built at DecodeLabs (Project 1)
-A rule-based AI chatbot that guides you toward:
+I am SkillPath Bot - a rule-based AI chatbot that guides you toward:
 - FREE online courses
 - Career roadmaps
 - CV-building strategies
@@ -118,9 +116,9 @@ Networking / Cloud / DevOps
 IT / Information Technology
 Python (foundation for all paths)
 
-CV       - How to build a strong CV
+CV         - How to build a strong CV
 Internship - How to land one
-Beginner  - Don't know where to start?
+Beginner   - Don't know where to start?
 Free Courses - Best free platforms
 
 Type 'bye' to exit
@@ -199,8 +197,7 @@ FREE COURSES:
 - fast.ai - Practical Deep Learning (FREE)
   https://course.fast.ai
 
-- Deep Learning Specialization - Andrew Ng
-  (Audit FREE on Coursera)
+- Deep Learning Specialization - Andrew Ng (Audit FREE on Coursera)
   https://www.coursera.org/specializations/deep-learning
 
 - MIT 6.S191 Deep Learning (FREE)
@@ -321,66 +318,60 @@ Node.js, REST API, Git, Responsive Design
 """,
 
     "path_cyber": lambda: """
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  🔐  CYBERSECURITY ROADMAP
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  STEP 1 → Networking basics (type 'networking')
-  STEP 2 → Linux fundamentals
-  STEP 3 → Security fundamentals (CIA Triad, threats)
-  STEP 4 → Ethical Hacking tools (Kali Linux, Nmap)
-  STEP 5 → CTF challenges (practice hacking legally!)
+CYBERSECURITY ROADMAP
 
-  🆓 FREE COURSES:
-  ┌─────────────────────────────────────────────────┐
-  │ 🔗 TryHackMe — Beginner paths (FREE tier)      │
-  │    → https://tryhackme.com                      │
-  │                                                 │
-  │ 🔗 Cybrary — Security Fundamentals (FREE)      │
-  │    → https://www.cybrary.it                     │
-  │                                                 │
-  │ 🔗 Google Cybersecurity Cert (Audit FREE)      │
-  │    → https://www.coursera.org/professional-certificates/google-cybersecurity
-  │                                                 │
-  │ 🔗 Hack The Box Academy (FREE tier)            │
-  │    → https://academy.hackthebox.com             │
-  │                                                 │
-  │ 🔗 OverTheWire — CTF Wargames (FREE)           │
-  │    → https://overthewire.org                    │
-  └─────────────────────────────────────────────────┘
-  💼 CV SKILLS: Linux, Kali, Wireshark, Nmap,
-     OWASP, Network Security, CTF Experience
-  🏆 CERTS TO TARGET: CompTIA Security+ (paid but worth it)
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+STEP 1 - Networking basics (type 'networking')
+STEP 2 - Linux fundamentals
+STEP 3 - Security fundamentals (CIA Triad, threats)
+STEP 4 - Ethical Hacking tools (Kali Linux, Nmap)
+STEP 5 - CTF challenges (practice hacking legally!)
+
+FREE COURSES:
+- TryHackMe - Beginner paths (FREE tier)
+  https://tryhackme.com
+
+- Cybrary - Security Fundamentals (FREE)
+  https://www.cybrary.it
+
+- Google Cybersecurity Cert (Audit FREE)
+  https://www.coursera.org/professional-certificates/google-cybersecurity
+
+- Hack The Box Academy (FREE tier)
+  https://academy.hackthebox.com
+
+- OverTheWire - CTF Wargames (FREE)
+  https://overthewire.org
+
+CV SKILLS: Linux, Kali, Wireshark, Nmap,
+OWASP, Network Security, CTF Experience
+CERT TO TARGET: CompTIA Security+
 """,
 
     "path_network": lambda: """
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  🌐  NETWORKING ROADMAP
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  STEP 1 → OSI Model & TCP/IP
-  STEP 2 → IP addressing, Subnetting, DNS, DHCP
-  STEP 3 → Cisco Packet Tracer (free lab simulator)
-  STEP 4 → Network security basics
-  STEP 5 → Target CCNA certification
+NETWORKING ROADMAP
 
-  🆓 FREE COURSES:
-  ┌─────────────────────────────────────────────────┐
-  │ 🔗 Cisco Networking Basics (FREE)              │
-  │    → https://skillsforall.com                   │
-  │                                                 │
-  │ 🔗 Professor Messer CompTIA Network+ (FREE)    │
-  │    → https://www.professormesser.com            │
-  │                                                 │
-  │ 🔗 Packet Tracer Download (FREE from Cisco)    │
-  │    → https://skillsforall.com/course/getting-started-cisco-packet-tracer
-  │                                                 │
-  │ 🔗 NetworkChuck YouTube (FREE)                 │
-  │    → https://www.youtube.com/@NetworkChuck     │
-  └─────────────────────────────────────────────────┘
-  💼 CV SKILLS: TCP/IP, DNS, DHCP, Subnetting,
-     Wireshark, Cisco Packet Tracer, Firewalls
-  🏆 CERT TO TARGET: CCNA (career-defining)
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+STEP 1 - OSI Model & TCP/IP
+STEP 2 - IP addressing, Subnetting, DNS, DHCP
+STEP 3 - Cisco Packet Tracer (free lab simulator)
+STEP 4 - Network security basics
+STEP 5 - Target CCNA certification
+
+FREE COURSES:
+- Cisco Networking Basics (FREE)
+  https://skillsforall.com
+
+- Professor Messer CompTIA Network+ (FREE)
+  https://www.professormesser.com
+
+- Packet Tracer Download (FREE from Cisco)
+  https://skillsforall.com/course/getting-started-cisco-packet-tracer
+
+- NetworkChuck YouTube (FREE)
+  https://www.youtube.com/@NetworkChuck
+
+CV SKILLS: TCP/IP, DNS, DHCP, Subnetting,
+Wireshark, Cisco Packet Tracer, Firewalls
+CERT TO TARGET: CCNA (career-defining)
 """,
 
     "path_cloud": lambda: """
@@ -410,62 +401,56 @@ Terraform, CI/CD, Linux, S3, EC2
 """,
 
     "path_devops": lambda: """
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  ⚙️   DEVOPS ROADMAP
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  STEP 1 → Linux + Bash scripting
-  STEP 2 → Git & GitHub (version control)
-  STEP 3 → Docker (containerization)
-  STEP 4 → CI/CD pipelines (GitHub Actions FREE)
-  STEP 5 → Cloud + Kubernetes
+DEVOPS ROADMAP
 
-  🆓 FREE COURSES:
-  ┌─────────────────────────────────────────────────┐
-  │ 🔗 TechWorld with Nana — DevOps (YouTube FREE) │
-  │    → https://www.youtube.com/@TechWorldwithNana │
-  │                                                 │
-  │ 🔗 Docker Official Get Started (FREE)          │
-  │    → https://docs.docker.com/get-started        │
-  │                                                 │
-  │ 🔗 GitHub Actions Docs (FREE)                  │
-  │    → https://docs.github.com/actions            │
-  │                                                 │
-  │ 🔗 Linux Foundation Free Courses (FREE)        │
-  │    → https://training.linuxfoundation.org       │
-  └─────────────────────────────────────────────────┘
-  💼 CV SKILLS: Docker, Kubernetes, GitHub Actions,
-     Linux, Bash, Terraform, Jenkins, AWS/GCP
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+STEP 1 - Linux + Bash scripting
+STEP 2 - Git & GitHub (version control)
+STEP 3 - Docker (containerization)
+STEP 4 - CI/CD pipelines (GitHub Actions FREE)
+STEP 5 - Cloud + Kubernetes
+
+FREE COURSES:
+- TechWorld with Nana - DevOps (YouTube FREE)
+  https://www.youtube.com/@TechWorldwithNana
+
+- Docker Official Get Started (FREE)
+  https://docs.docker.com/get-started
+
+- GitHub Actions Docs (FREE)
+  https://docs.github.com/actions
+
+- Linux Foundation Free Courses (FREE)
+  https://training.linuxfoundation.org
+
+CV SKILLS: Docker, Kubernetes, GitHub Actions,
+Linux, Bash, Terraform, Jenkins, AWS/GCP
 """,
 
     "path_it": lambda: """
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  🖥️   IT / INFORMATION TECHNOLOGY ROADMAP
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  STEP 1 → Computer Hardware & OS basics
-  STEP 2 → Networking fundamentals
-  STEP 3 → Linux + Windows administration
-  STEP 4 → IT Support & Troubleshooting
-  STEP 5 → Specialize (Cloud / Cyber / Network)
+IT / INFORMATION TECHNOLOGY ROADMAP
 
-  🆓 FREE COURSES:
-  ┌─────────────────────────────────────────────────┐
-  │ 🔗 Google IT Support Cert (Audit FREE)         │
-  │    → https://www.coursera.org/professional-certificates/google-it-support
-  │                                                 │
-  │ 🔗 Cisco Skills for All (FREE)                 │
-  │    → https://skillsforall.com                   │
-  │                                                 │
-  │ 🔗 Professor Messer CompTIA A+ (FREE)          │
-  │    → https://www.professormesser.com            │
-  │                                                 │
-  │ 🔗 Microsoft Learn IT Fundamentals (FREE)      │
-  │    → https://learn.microsoft.com               │
-  └─────────────────────────────────────────────────┘
-  💼 CV SKILLS: Networking, Linux, Windows Server,
-     Active Directory, Troubleshooting, Cloud basics
-  🏆 CERT TO TARGET: CompTIA A+ (entry-level gold)
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+STEP 1 - Computer Hardware & OS basics
+STEP 2 - Networking fundamentals
+STEP 3 - Linux + Windows administration
+STEP 4 - IT Support & Troubleshooting
+STEP 5 - Specialize (Cloud / Cyber / Network)
+
+FREE COURSES:
+- Google IT Support Cert (Audit FREE)
+  https://www.coursera.org/professional-certificates/google-it-support
+
+- Cisco Skills for All (FREE)
+  https://skillsforall.com
+
+- Professor Messer CompTIA A+ (FREE)
+  https://www.professormesser.com
+
+- Microsoft Learn IT Fundamentals (FREE)
+  https://learn.microsoft.com
+
+CV SKILLS: Networking, Linux, Windows Server,
+Active Directory, Troubleshooting, Cloud basics
+CERT TO TARGET: CompTIA A+ (entry-level gold)
 """,
 
     "path_python": lambda: """
@@ -567,15 +552,15 @@ STEP 3 - Set up LinkedIn properly
 STEP 4 - Apply on these platforms:
 
 WHERE TO APPLY:
-- LinkedIn Jobs - linkedin.com/jobs
-- Internshala - internshala.com
-- AngelList - wellfound.com
-- GitHub Jobs - jobs.github.com
-- Google Internships - careers.google.com
-- MLH Fellowship (FREE, remote) - fellowship.mlh.io
+- LinkedIn Jobs   - linkedin.com/jobs
+- Internshala     - internshala.com
+- AngelList       - wellfound.com
+- GitHub Jobs     - jobs.github.com
+- Google          - careers.google.com
+- MLH Fellowship  - fellowship.mlh.io
 
 COLD OUTREACH WORKS:
-Find an engineer on LinkedIn > message them:
+Find an engineer on LinkedIn and message them:
 "Hi, I'm learning [X], built [project].
 Do you have any internship openings?"
 50% of internships are never posted publicly.
@@ -589,28 +574,28 @@ MINIMUM TO APPLY:
     "free_platforms": lambda: """
 BEST FREE LEARNING PLATFORMS
 
-- CS50 (Harvard) - cs50.harvard.edu
+- CS50 (Harvard)        - cs50.harvard.edu
   Best: CS, Python, Web, AI, Cybersecurity
 
-- Kaggle Learn - kaggle.com/learn
+- Kaggle Learn          - kaggle.com/learn
   Best: Python, ML, DS, SQL, AI
 
-- freeCodeCamp - freecodecamp.org
+- freeCodeCamp          - freecodecamp.org
   Best: Web Dev, Python, DS, ML
 
 - Google Digital Garage - learndigital.withgoogle.com
   Best: AI, Data, Digital Marketing
 
-- Microsoft Learn - learn.microsoft.com
+- Microsoft Learn       - learn.microsoft.com
   Best: Azure, .NET, AI, DevOps
 
-- IBM SkillsBuild - skillsbuild.org
+- IBM SkillsBuild       - skillsbuild.org
   Best: AI, Data Science, Cybersecurity
 
-- fast.ai - fast.ai
+- fast.ai               - fast.ai
   Best: Deep Learning, practical ML
 
-- The Odin Project - theodinproject.com
+- The Odin Project      - theodinproject.com
   Best: Full-stack Web Development
 
 TIP: Audit courses on Coursera = FREE content,
@@ -625,33 +610,33 @@ Great session! Remember:
 - Every expert was once a beginner
 
 Good luck on your journey!
-- SkillPath Bot | DecodeLabs Project 1
+- SkillPath Bot
 """,
 }
 
 # FALLBACK RESPONSES - Rotates to feel less robotic
 
 FALLBACKS = [
-    "🤔 I didn't catch that. Type 'menu' to see what I can help with.",
-    "❓ Not sure about that one. Try typing a path like 'ai', 'cyber', or 'web dev'.",
-    "💡 I specialize in free courses & career guidance. Type 'menu' to explore!",
-    "🔍 Hmm, I don't have that. Try: 'ai', 'data science', 'cybersecurity', 'networking', or 'beginner'",
+    "I didn't catch that. Type 'menu' to see what I can help with.",
+    "Not sure about that one. Try typing a path like 'ai', 'cyber', or 'web dev'.",
+    "I specialize in free courses & career guidance. Type 'menu' to explore!",
+    "Hmm, I don't have that. Try: 'ai', 'data science', 'cybersecurity', 'networking', or 'beginner'",
 ]
 
 # CORE ENGINE
 
 def sanitize(raw: str) -> str:
-    """Phase 1 — Input Sanitization (lowercase + strip whitespace)"""
+    """Phase 1 - Input Sanitization (lowercase + strip whitespace)"""
     return raw.lower().strip()
 
 
 def get_intent(clean_input: str) -> str:
-    """Phase 2 — Intent Matching via Dictionary (O(1) lookup)"""
+    """Phase 2 - Intent Matching via Dictionary (O(1) lookup)"""
     return KNOWLEDGE_BASE.get(clean_input, None)
 
 
 def generate_response(intent: str) -> str:
-    """Phase 3 — Response Generation"""
+    """Phase 3 - Response Generation"""
     if intent is None:
         return random.choice(FALLBACKS)
     if intent == "exit_chat":
@@ -662,21 +647,16 @@ def generate_response(intent: str) -> str:
     return random.choice(FALLBACKS)
 
 
-def typing_effect(text: str, delay: float = 0.01):
-    """Simulates bot 'typing' for a more realistic feel"""
-    for char in text:
-        print(char, end='', flush=True)
-        time.sleep(delay)
-    print()
-
 # MAIN LOOP - The Heartbeat
 
 def main():
-    # Startup
+    print("=" * 50)
+    print("  SkillPath Bot | Free Course & Career Guide")
+    print("  Type 'menu' to get started | 'bye' to exit")
+    print("=" * 50)
     time.sleep(0.3)
     print(RESPONSES["greet"]())
 
-    # Infinite loop - runs until exit command
     while True:
         try:
             raw = input("You: ")
@@ -695,7 +675,6 @@ def main():
             # Phase 3: Generate response
             reply = generate_response(intent)
 
-            # Output
             print(f"\nBot: {reply}")
 
             # Exit condition
@@ -703,7 +682,7 @@ def main():
                 break
 
         except KeyboardInterrupt:
-            print("\n\nBot: Session interrupted. Goodbye! 👋")
+            print("\n\nBot: Session interrupted. Goodbye!")
             break
 
 
